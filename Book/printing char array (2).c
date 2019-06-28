@@ -1,0 +1,17 @@
+#include <string.h>
+#include <stdio.h>
+int main ()
+{
+    char saarc[7][100] = {"Bangladesh", "Bhutan", "Maldives", "Sri lanka", "India", "Pakistan", "Nepal"};
+    int row, col, name_length;
+    for(row = 0; row < 7; row++)
+    {
+        name_length = strlen(saarc[row]);
+        for(col = 0; col < name_length; col++)
+        {
+            printf("%c ", saarc[row][col]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
